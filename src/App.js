@@ -5,8 +5,7 @@ import './App.css';
 // import { pipeline } from '@xenova/transformers';
 import { useEffect, useState } from 'react';
 
-import { pipeline, env } from "https://cdn.jsdelivr.net/npm/@xenova/transformers@2.6.0";
-
+import { pipeline, env } from '@xenova/transformers';
 env.allowLocalModels = false;
 
 
@@ -145,7 +144,7 @@ function App() {
           </div>
         </div>
         <div className='h-4' />
-        <button class="transition-all bg-slate-700 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded flex space-x-4 items-center w-36 h-12 justify-center" onClick={onClick}>
+        <button class="transition-all bg-slate-700 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded-lg flex space-x-4 items-center w-36 h-10 justify-center" onClick={onClick}>
           {
             loading ?
               <div class="inline-block h-6 w-6 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
